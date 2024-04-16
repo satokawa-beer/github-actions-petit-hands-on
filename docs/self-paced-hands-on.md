@@ -1,7 +1,6 @@
 # セルフペースドハンズオン
 
 - [CIワークフローを作成してみる](#CIワークフローを作成してみる)
-- [CDワークフローを作成してみる](#CDワークフローを作成してみる)
 
 ## CIワークフローを作成してみる
 
@@ -11,8 +10,9 @@
 
 1. 以下のコマンドを実行し、ブランチを作成して切り替える
    ```bash
-   git switch -c add-ci-workflow
+   git switch -c add-workflow-<アカウント名>
    ```
+   - ブランチ名はアカウント毎に異なるようにしてください
 2. `.github/workflows/ci-sample.yml`をコピーして、`.github/workflows/ci-<アカウント名>.yml`を作成する
 3. `name:`の`<アカウント名>`を自分のアカウント名に変更する
 
@@ -94,9 +94,10 @@ jobs:
    ```bash
    git add .github/workflows/ci-<アカウント名>.yml
    git commit -m "Add CI workflow"
-   git push -u origin add-ci-workflow
+   git push -u origin add-workflow-<アカウント名>
    ```
 2. プッシュしたブランチから、プルリクエストを作成する
+   - プルリクエストのタイトルの先頭に`[<アカウント名>] `と付与してください
 
 ### [実践] プルリクエスト上でコードに変更を加えてみる
 
@@ -117,7 +118,3 @@ jobs:
 おそらく、上記の作業を行うとワークフローがエラーを返します。エラーを確認し、対処してみましょう。
 
 うまく対処できましたか？😉
-
-## CDワークフローを作成してみる
-
-※ 未実装

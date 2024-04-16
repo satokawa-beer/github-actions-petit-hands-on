@@ -1,1 +1,15 @@
-# github-actions-petit-hands-on
+# GitHub Actions プチハンズオン
+
+このハンズオンでは、GitHub Actionsのワークフローのはじめの一歩を体験できます。
+
+## ハンズオン準備
+
+ハンズオンを実施するための環境を準備します。次のドキュメントをご参照ください。
+
+- [ハンズオンの準備](/docs/prepare.md)
+
+## セルフペースドハンズオン
+
+ハンズオンの資料はこちらです。
+
+- [ハンズオン資料](/docs/self-paced-hands-on.md)
