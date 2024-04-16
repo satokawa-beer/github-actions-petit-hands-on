@@ -26,6 +26,7 @@
 		"vscode": {
 			"extensions": [
 				"GitHub.copilot-chat",
+				"GitHub.vscode-github-actions",
 				"Vue.volar"
 			]
 		}
